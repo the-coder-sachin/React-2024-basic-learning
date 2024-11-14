@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  color: #39FF14;
+}
+
+.clock {
+  font-family: "Orbitron", serif;
+}
+
+.time,
+.date {
+  font-size: 2.5rem;
+  display: inline;
+  font-style: italic;
+}
+
+.time {
+  font-size: 5rem;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+}
+
+.msg {
+  position: fixed;
+  bottom: 3rem;
+  right: 1rem;
+  font-size: 5rem;
+}

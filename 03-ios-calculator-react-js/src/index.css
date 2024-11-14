@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  color: honeydew;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile {
+  height: 90vh;
+  width: 320px;
+  border: 2px solid #7b7b7b;
+  box-shadow: 0px 0px 15px #2c2c2c;
+  border-radius: 1.5rem;
+}
+
+.calculator {
+  height: 100%;
+  width: 100%;
+}
+
+.sec-display {
+  height: 55px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 28px;
+  font-size: 22px;
+  padding-bottom: 5px;
+  color: #7b7b7b;
+}
+
+.display {
+  margin-right: 18px;
+  font-size: 4rem;
+  text-align: end;
+  overflow: hidden;
+}
+
+.btns {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+button {
+  height: 66px;
+  width: 66px;
+  border-radius: 50%;
+  font-size: 26px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: honeydew;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orng {
+  background-color: #ff9634;
+}
+
+.d-grey {
+  background-color: #2c2c2c;
+}
+
+.l-grey {
+  background-color: #7b7b7b;
+}
+
+.backspace {
+  font-size: 38px;
+}
+
+.ac {
+  font-weight: 600;
+}
+
+
+.icon {
+  height: 15px;
+  width: 22px;
+  border: 2px solid white;
+}
