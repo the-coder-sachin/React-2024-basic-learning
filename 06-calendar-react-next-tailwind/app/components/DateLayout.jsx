@@ -11,35 +11,34 @@ const DateLayout = ({generateCalendar, today, chooseDate}) => {
     
     
   return (
-    <div className='border p-2 bg-cyan-400 min-h-80 shadow-md'>
+    <div className='border rounded-lg p-2 min-h-80 shadow-md mt-2 font-bold'>
     {calendar.map((days, idx)=>{
         return(
-            <div key={idx} className='flex  justify-between '>
+            <div key={idx} className='flex justify-between'>
                 {days.map((day, idx)=>{
                     if(day === today.getDate()){
                         return (
                           <div
-                            onClick={()=>{chooseDate(day)}}
+                            onClick={() => {
+                              chooseDate(day);
+                            }}
                             key={idx}
-                            className={
-                              day
-                                ? "day text-center w-16 bg-pink-500 m-1 p-2 rounded-full cursor-pointer "
-                                : "day text-center w-16 m-1 p-2 rounded-full "
-                            }
+                            className='text-center bg-[#f59e0c] rounded-xl border-4 size-12 flex justify-center items-center border-[#433517] cursor-pointer'
                           >
                             {day}
                           </div>
                         );
                     }else{return (
                       <div
-                        onClick={()=>{chooseDate(day)}}
+                        onClick={() => {
+                          chooseDate(day);
+                        }}
                         key={idx}
                         className={
                           day
-                            ? "day text-center w-16 bg-cyan-500 m-1 p-2 rounded-full cursor-pointer hover:bg-cyan-700 active:bg-pink-500"
-                            : "day text-center w-16 m-1 p-2 rounded-full "
+                            ? "day size-12 text-white flex justify-center items-center  rounded-xl cursor-pointer hover:text-teal-300 active:bg-[#f59e0c] active:border-[#433517] active:border-4"
+                            : "day size-12 "
                         }
-                        
                       >
                         {day}
                       </div>

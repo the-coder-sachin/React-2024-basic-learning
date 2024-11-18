@@ -63,13 +63,16 @@ const page = () => {
   
   return (
     <>
-      <div className="bg bg-cyan-900 h-screen w-screen text-cyan-100 flex items-center justify-center select-none">
-        <div className="calendar bg-cyan-500 flex flex-col shadow-2xl rounded-lg p-6 w-96">
+      <div className="bg bg-[#020617] h-screen w-screen text-cyan-100 flex items-center justify-center select-none">
+        <div className="calendar bg-[#020617] flex flex-col shadow-2xl rounded-lg p-6 border ">
           <ChangeMonths changeMonth={changeMonth} />
-          <h1 className="text-center font-semibold ">my calendar</h1>
           <CalendarHeader today={today} />
           <WeekDays />
-          <DateLayout generateCalendar={generateCalendar} today={today} chooseDate={chooseDate} />
+          <DateLayout
+            generateCalendar={generateCalendar}
+            today={today}
+            chooseDate={chooseDate}
+          />
         </div>
       </div>
     </>

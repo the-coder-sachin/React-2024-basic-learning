@@ -2,14 +2,14 @@ import React from 'react'
 
 const WeekDays = () => {
   return (
-    <div className='flex justify-between border p-2 font-bold'>
-        <div className="day w-16 text-center">sun</div>
-        <div className="day w-16 text-center">mon</div>
-        <div className="day w-16 text-center">tue</div>
-        <div className="day w-16 text-center">wed</div>
-        <div className="day w-16 text-center">thu</div>
-        <div className="day w-16 text-center">fri</div>
-        <div className="day w-16 text-center">sat</div>
+    <div className='flex justify-between border p-2 font-bold text-teal-400 rounded-lg'>
+        <div className="day w-16 text-center capitalize text-xl">s</div>
+        <div className="day w-16 text-center capitalize text-xl">m</div>
+        <div className="day w-16 text-center capitalize text-xl">t</div>
+        <div className="day w-16 text-center capitalize text-xl">w</div>
+        <div className="day w-16 text-center capitalize text-xl">t</div>
+        <div className="day w-16 text-center capitalize text-xl">f</div>
+        <div className="day w-16 text-center capitalize text-xl">s</div>
     </div>
   )
 }
